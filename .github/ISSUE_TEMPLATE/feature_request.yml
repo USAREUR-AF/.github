@@ -1,0 +1,24 @@
+name: Feature request
+description: Something new this project should do
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you need
+      description: Who needs it, what they're trying to do, and why it matters.
+      placeholder: "As a <role>, I want <capability>, so that <outcome>."
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: How we'll know it's done
+      description: What a user can do afterwards that they can't do now.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Alternatives you considered, related issues, links.

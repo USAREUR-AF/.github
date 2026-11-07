@@ -1,0 +1,41 @@
+name: Bug report
+description: Something doesn't work the way it should
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. If it could be a security problem, stop here and
+        report it privately through this repository's Security tab ("Report a vulnerability").
+        Don't include real host names, addresses, credentials or personal data.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce it
+      description: The smallest set of commands or steps that shows the problem.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release, tag or commit you used.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, architecture, and anything else relevant.
